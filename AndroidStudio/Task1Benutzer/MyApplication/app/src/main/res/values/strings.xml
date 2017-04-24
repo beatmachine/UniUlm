@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Live Sensor</string>
+    <string name="button_accelerometer">Accelerometer</string>
+    <string name="button_gpslocation">GPS Location</string>
+    <string name="number_x">0</string>
+    <string name="number_y">0</string>
+    <string name="number_z">0</string>
+    <string name="gps_longitude">0</string>
+    <string name="gps_latitude">0</string>
+</resources>
