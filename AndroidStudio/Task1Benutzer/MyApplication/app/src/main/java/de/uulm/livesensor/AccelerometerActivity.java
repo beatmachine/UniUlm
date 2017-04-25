@@ -1,12 +1,15 @@
 package de.uulm.livesensor;
 
+import android.Manifest;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 
 public class AccelerometerActivity extends AppCompatActivity implements SensorEventListener {
@@ -29,6 +32,8 @@ public class AccelerometerActivity extends AppCompatActivity implements SensorEv
         xview = (EditText) findViewById(R.id.numx);
         yview = (EditText) findViewById(R.id.numy);
         zview = (EditText) findViewById(R.id.numz);
+        int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION);
+        Log.d("permission", Integer.toString(permissionCheck));
 
     }
     @Override
