@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.uulm.livesensor">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-feature android:name="android.hardware.location.network"/>
     <application
         android:allowBackup="true"
@@ -10,20 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="de.uulm.livesensor.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AccelerometerActivity"
+        <activity android:name="de.uulm.livesensor.AccelerometerActivity"
                   android:parentActivityName=".MainActivity"/>
 
-        <activity android:name=".GpsActivity"
+        <activity android:name="de.uulm.livesensor.GpsActivity"
                   android:parentActivityName=".MainActivity">
 
         </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCmOp-dnfs_IWgT7M7UxBTsfAcSRxeqM8c"/>
     </application>
 
 </manifest>

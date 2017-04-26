@@ -7,4 +7,8 @@
     <string name="number_z">0</string>
     <string name="gps_longitude">0</string>
     <string name="gps_latitude">0</string>
+    <string name="gps_permission">Accept use of GPS</string>
+    <string name="x_cord">X</string>
+    <string name="y_cord">Y</string>
+    <string name="z_cord">Z</string>>
 </resources>
